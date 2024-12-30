@@ -1,0 +1,17 @@
+# git ignore file for .NET projects
+
+# Ignore Visual Studio files
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Ignore NuGet packages
+packages/
