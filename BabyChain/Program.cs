@@ -16,8 +16,8 @@ namespace BabyChainDemo
             node1.ConnectToPeer("127.0.0.1:5001");
             node2.ConnectToPeer("127.0.0.1:5000");
 
-            node1.Blockchain.AddBlock(new Block(1, DateTime.Now, "Block 1 Data", ""));
-            node1.Broadcast("BLOCK:" + "Block 1 Data");
+            node1.Blockchain.AddBlock(new Block(3, DateTime.Now, "{sender: 'Alice', receiver: 'Charlie', amount: 100}", ""));
+            node1.Broadcast("BLOCK:" + node1.SerializeBlock(node1.Blockchain.GetLatestBlock()));
 
             Console.ReadLine();
         }

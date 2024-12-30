@@ -1,6 +1,9 @@
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 public class Node
 {
@@ -72,7 +75,7 @@ public class Node
         {
             // Parse and add the block
             string blockData = message.Substring(6);
-            Block receivedBlock = ParseBlock(blockData);
+            Block receivedBlock = DeserializeBlock(blockData);
             if (ValidateBlock(receivedBlock))
             {
                 Blockchain.AddBlock(receivedBlock);
@@ -96,33 +99,36 @@ public class Node
             }
         }
     }
-
-    private Block ParseBlock(string blockData)
-    {
-        // Logic to deserialize the block from string
-        // Example: Use JSON or similar format for block serialization
-        // return JsonConvert.DeserializeObject<Block>(blockData);
-        return new Block(0, DateTime.Now, blockData, "0"); // Placeholder
-    }
-
     private bool ValidateBlock(Block block)
     {
         // Validate block structure, hash, and linkage
-        return block.PreviousHash == Blockchain.GetLatestBlock().Hash;
+        bool test =  block.PreviousHash == Blockchain.GetLatestBlock().Hash;
+        Console.WriteLine(test);
+        return test;
     }
 
     private string SerializeChain()
     {
         // Serialize the blockchain
-        // Example: return JsonConvert.SerializeObject(Blockchain.Chain);
-        return ""; // Placeholder
+        return JsonSerializer.Serialize(Blockchain.Chain);
     }
 
     private List<Block> DeserializeChain(string chainData)
     {
         // Deserialize the chain
-        // Example: return JsonConvert.DeserializeObject<List<Block>>(chainData);
-        return new List<Block>(); // Placeholder
+        return JsonSerializer.Deserialize<List<Block>>(chainData) ?? [];
+    }
+
+    // Serialize the block
+    public string SerializeBlock(Block block)
+    {
+        return JsonSerializer.Serialize(block);
+    }
+
+    // Deserialize the block
+    private Block DeserializeBlock(string blockData)
+    {
+        return JsonSerializer.Deserialize<Block>(blockData) ?? new Block(0, DateTime.Now, "", "0");
     }
 
     private bool ValidateChain(List<Block> chain)

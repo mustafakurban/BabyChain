@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BabyChain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+041e224aef4eff82b6dd2cc92b89295fe6cd0b19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4668237845291fc2771c7289f18986c129b682b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BabyChain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BabyChain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
