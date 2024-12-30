@@ -1,0 +1,17 @@
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.deps.json
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.runtimeconfig.json
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.dll
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.pdb
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfo.cs
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.dll
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/refint/ConsoleApp1.dll
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.AssemblyReference.cache
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/Neo.SmartContract.Framework.dll
+/home/mustafa/Projects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleA.CB28C8CC.Up2Date
