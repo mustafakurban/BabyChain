@@ -102,9 +102,8 @@ public class Node
     private bool ValidateBlock(Block block)
     {
         // Validate block structure, hash, and linkage
-        bool test =  block.PreviousHash == Blockchain.GetLatestBlock().Hash;
-        Console.WriteLine(test);
-        return test;
+        return block.PreviousHash == Blockchain.GetLatestBlock().Hash;
+        
     }
 
     private string SerializeChain()
