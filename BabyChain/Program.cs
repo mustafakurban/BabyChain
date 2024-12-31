@@ -19,6 +19,12 @@ namespace BabyChainDemo
             node1.Blockchain.AddBlock(new Block(3, DateTime.Now, "{sender: 'Alice', receiver: 'Charlie', amount: 100}", ""));
             node1.Broadcast("BLOCK:" + node1.SerializeBlock(node1.Blockchain.GetLatestBlock()));
 
+            // Wait for the block to be added
+            System.Threading.Thread.Sleep(10);
+
+            node2.Blockchain.AddBlock(new Block(3, DateTime.Now, "{sender: 'Bob', receiver: 'Dave', amount: 50}", ""));
+            node2.Broadcast("BLOCK:" + node2.SerializeBlock(node2.Blockchain.GetLatestBlock()));
+
             Console.ReadLine();
         }
 
